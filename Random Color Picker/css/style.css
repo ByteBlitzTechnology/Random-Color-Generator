@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+*
+{
+	font-family: 'Montserrat';
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	user-select: none;
+    scroll-behavior: smooth;
+    transition: 1s ease-in-out;
+}
+
+body
+{
+	width: 100%;
+	height: 100vh;
+	background: #F9F9F9;
+}
+
+#page-loader
+{
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	position: absolute;
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+
+  	z-index: 100;
+  	width: 100%;
+  	height: 100vh;
+  	background: #F9F9F9;
+}
+
+#page-loader img
+{
+	max-width: 30%;
+}
+
+@keyframes fadeinout
+{
+	0% {
+    	opacity: 0;
+  	}
+
+  	50% {
+    	opacity: 1;
+  	}
+
+  	100%
+  	{
+    	opacity: 0;
+  	}
+}
+
+@keyframes loading{
+  	to{
+    	transform: rotate(2turn);
+  	}
+}
+
+/* LOADER 4 */
+
+#loader-4 span{
+  	display: inline-block;
+  	width: 15px;
+  	height: 15px;
+  	border-radius: 100%;
+  	background-color: black;
+  	margin: 10px 10px;
+  	opacity: 0;
+}
+
+#loader-4 span:nth-child(1){
+  	animation: opacitychange 1s ease-in-out infinite;
+}
+
+#loader-4 span:nth-child(2){
+  	animation: opacitychange 1s ease-in-out 0.33s infinite;
+}
+
+#loader-4 span:nth-child(3){
+  	animation: opacitychange 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes opacitychange{
+  	0%, 100%{
+    	opacity: 0;
+  	}
+
+  	60%{
+    	opacity: 1;
+  	}
+}	
+
+#copy, #generate
+{
+	margin: 10px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#copy button
+{
+	width: 20%;
+	height: auto;
+	padding: 10px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	background: lightgreen;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+#generate button:hover, #copy button:hover
+{
+	background-image: linear-gradient(rgba(0 0 0 / 5%) 0 0);
+}
+
+#generate button
+{
+	width: 20%;
+	height: auto;
+	padding: 10px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	background: yellowgreen;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+#colorbox
+{
+	width: 100%;
+	height: 400px;
+	background: red;
+}
+
+
+#colorhexcode
+{
+	margin: 10px 0px;
+	text-align: center;
+}
+
+#colorhexcode p
+{
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.credits
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.credits p
+{
+	font-weight: 500;
+}
+
+.credits a
+{
+	text-decoration: none;
+}
+@media(max-aspect-ratio: 16/9)
+{
+	#page-loader
+	{
+	  	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%, -50%);
+	  	position: absolute;
+
+	  	display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+	  	flex-direction: column;
+
+	  	z-index: 100;
+	  	width: 100%;
+	  	height: 100vh;
+	  	background: #F9F9F9;
+	}
+
+	#page-loader img
+	{
+		max-width: 80%;
+	}
+
+	@keyframes fadeinout
+	{
+		0% {
+	    	opacity: 0;
+	  	}
+
+	  	50% {
+	    	opacity: 1;
+	  	}
+
+	  	100%
+	  	{
+	    	opacity: 0;
+	  	}
+	}
+
+	@keyframes loading{
+	  	to{
+	    	transform: rotate(2turn);
+	  	}
+	}
+
+	/* LOADER 4 */
+
+	#loader-4 span{
+	  	display: inline-block;
+	  	width: 30px;
+	  	height: 30px;
+	  	border-radius: 100%;
+	  	background-color: black;
+	  	margin: 10px 20px;
+	  	opacity: 0;
+	}
+
+	#loader-4 span:nth-child(1){
+	  	animation: opacitychange 1s ease-in-out infinite;
+	}
+
+	#loader-4 span:nth-child(2){
+	  	animation: opacitychange 1s ease-in-out 0.33s infinite;
+	}
+
+	#loader-4 span:nth-child(3){
+	  	animation: opacitychange 1s ease-in-out 0.66s infinite;
+	}
+
+	@keyframes opacitychange{
+	  	0%, 100%{
+	    	opacity: 0;
+	  	}
+
+	  	60%{
+	    	opacity: 1;
+	  	}
+	}	
+
+	#copy, #generate
+	{
+		margin: 30px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#copy button
+	{
+		width: 50%;
+		height: auto;
+		padding: 10px;
+		font-size: 50px;
+		border: none;
+		outline: none;
+		background: lightgreen;
+		font-weight: 500;
+		cursor: pointer;
+		border-radius: 50px;
+	}
+
+	#generate button
+	{
+		width: 50%;
+		height: auto;
+		padding: 10px;
+		font-size: 50px;
+		border: none;
+		outline: none;
+		background: yellowgreen;
+		font-weight: 500;
+		cursor: pointer;
+		border-radius: 50px;
+	}
+
+	#colorbox
+	{
+		width: 100%;
+		height: 1000px;
+		background: red;
+	}
+
+
+	#colorhexcode
+	{
+		margin: 10px 0px;
+		text-align: center;
+	}
+
+	#colorhexcode p
+	{
+		font-weight: 400;
+		font-size: 80px;
+	}
+
+	.credits
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.credits p
+	{
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	.credits a
+	{
+		font-size: 30px;
+		text-decoration: none;
+	}
+}
